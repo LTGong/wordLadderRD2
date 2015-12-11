@@ -28,8 +28,8 @@
                                     <action selector="valChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TEE-ds-cyc"/>
                                 </connections>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Ladderspace" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-hz-LIt">
-                                <rect key="frame" x="100" y="58" width="400" height="499"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Ladderspace" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-hz-LIt">
+                                <rect key="frame" x="20" y="58" width="560" height="499"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -44,23 +44,35 @@
                                     <action selector="editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="HPe-w5-TPE"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stepcount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-jD-779">
+                                <rect key="frame" x="261" y="29" width="78" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZnS-hz-LIt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="2ts-FF-BrH"/>
+                            <constraint firstItem="ZnS-hz-LIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Cp-bU-AZd"/>
+                            <constraint firstItem="CPJ-jD-779" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Es3-LT-1hD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZnS-hz-LIt" secondAttribute="bottom" constant="43" id="LQ7-N7-Uo0"/>
                             <constraint firstItem="j48-4p-nzv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S7v-90-5H5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZnS-hz-LIt" secondAttribute="trailing" id="bN9-Ic-Yyz"/>
                             <constraint firstItem="ZnS-hz-LIt" firstAttribute="top" secondItem="CB2-j3-Tec" secondAttribute="bottom" constant="8" symbolic="YES" id="daX-5R-Hiy"/>
                             <constraint firstItem="CB2-j3-Tec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gCD-Ud-K2Q"/>
                             <constraint firstItem="j48-4p-nzv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hZV-TV-p8c"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZnS-hz-LIt" secondAttribute="leading" id="igt-nL-oFd"/>
                             <constraint firstItem="j48-4p-nzv" firstAttribute="baseline" secondItem="CB2-j3-Tec" secondAttribute="baseline" id="xhf-Bm-AwZ"/>
+                            <constraint firstItem="CPJ-jD-779" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="zO3-DK-62Y"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="endField" destination="j48-4p-nzv" id="5yy-lj-ozD"/>
                         <outlet property="output" destination="ZnS-hz-LIt" id="sWe-2z-8N7"/>
                         <outlet property="startField" destination="CB2-j3-Tec" id="Fia-PG-84H"/>
+                        <outlet property="stepCount" destination="CPJ-jD-779" id="Tp0-S2-XJj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -58,11 +58,36 @@
 
 -(NSDictionary*)binDictFrom:(NSArray*)wordArr{
     NSMutableDictionary* binDict = [[NSMutableDictionary alloc] init];
+    for(NSString * str in wordArr){
+        //if([str length] == len){
+            //Add to buckets
+        for(int i = 0; i < 4; i++){
+            NSString * bucketName = [[[str substringToIndex:i]stringByAppendingString:@"_"] stringByAppendingString:[str substringFromIndex:i + 1]];
+            NSMutableArray<NSString *> * arr = [binDict objectForKey:bucketName];
+            if(arr != nil){
+                [arr addObject:str];
+            }
+            else{
+                arr = [[NSMutableArray alloc] init];
+                [arr addObject:str];
+                [binDict setObject:arr forKey:bucketName];
+            }
+            //}
+        }
+    }
+    return binDict;
+}
+
+/*
+
+-(NSDictionary*)binDictFrom:(NSArray*)wordArr{
+    NSMutableDictionary* binDict = [[NSMutableDictionary alloc] init];
     for (NSString* word in wordArr){
         [self add: word to:binDict];
     }
     return binDict;
 }
+
 
 -(void)add: (NSString*)word to: (NSMutableDictionary*) binDict{
     for (NSString* binKey in [self binArrayForWord:word]){
@@ -100,6 +125,7 @@
     }
     return result;
 }
+ */
 
 -(void) populateGraph: (StrinGraph*) graph from:(NSDictionary*)binDict{
     for (NSString* binKey in [binDict allKeys]){

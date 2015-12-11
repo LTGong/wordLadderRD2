@@ -14,6 +14,7 @@
 @property LadderBuilder* lb;
 
 @property (strong, nonatomic) IBOutlet UITextView *output;
+@property (strong, nonatomic) IBOutlet UILabel *stepCount;
 
 @property (strong, nonatomic) IBOutlet UITextField *startField;
 @property (strong, nonatomic) IBOutlet UITextField *endField;
@@ -96,8 +97,8 @@
             result = [result stringByAppendingString:[rung stringByAppendingString:@"\n"]];
         }
     }
-    NSLog(result);
-    NSLog(@"%lu",(unsigned long)ladderArray.count);
+    
+    self.stepCount.text = [NSString stringWithFormat:@"%lu-rung ladder.",(unsigned long)ladderArray.count-1];
     self.output.text = result;
 }
 
