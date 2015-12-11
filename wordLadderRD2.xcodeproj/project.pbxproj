@@ -15,6 +15,11 @@
 		154270221C1AED7A00A557BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154270201C1AED7A00A557BB /* LaunchScreen.storyboard */; };
 		1542702D1C1AED7B00A557BB /* wordLadderRD2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542702C1C1AED7B00A557BB /* wordLadderRD2Tests.m */; };
 		154270381C1AED7B00A557BB /* wordLadderRD2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154270371C1AED7B00A557BB /* wordLadderRD2UITests.m */; };
+		1542704B1C1AEDC400A557BB /* PathQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 154270461C1AEDC400A557BB /* PathQueue.m */; };
+		1542704C1C1AEDC400A557BB /* StrinGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 154270481C1AEDC400A557BB /* StrinGraph.m */; };
+		1542704D1C1AEDC400A557BB /* LadderBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542704A1C1AEDC400A557BB /* LadderBuilder.m */; };
+		154270501C1AEDE300A557BB /* LadderBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542704F1C1AEDE300A557BB /* LadderBasicViewController.m */; };
+		154270521C1AEE5500A557BB /* ScrabbleDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 154270511C1AEE5500A557BB /* ScrabbleDict.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		154270331C1AED7B00A557BB /* wordLadderRD2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordLadderRD2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		154270371C1AED7B00A557BB /* wordLadderRD2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wordLadderRD2UITests.m; sourceTree = "<group>"; };
 		154270391C1AED7B00A557BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154270451C1AEDC400A557BB /* PathQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathQueue.h; sourceTree = "<group>"; };
+		154270461C1AEDC400A557BB /* PathQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathQueue.m; sourceTree = "<group>"; };
+		154270471C1AEDC400A557BB /* StrinGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrinGraph.h; sourceTree = "<group>"; };
+		154270481C1AEDC400A557BB /* StrinGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrinGraph.m; sourceTree = "<group>"; };
+		154270491C1AEDC400A557BB /* LadderBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LadderBuilder.h; sourceTree = "<group>"; };
+		1542704A1C1AEDC400A557BB /* LadderBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LadderBuilder.m; sourceTree = "<group>"; };
+		1542704E1C1AEDE300A557BB /* LadderBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LadderBasicViewController.h; sourceTree = "<group>"; };
+		1542704F1C1AEDE300A557BB /* LadderBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LadderBasicViewController.m; sourceTree = "<group>"; };
+		154270511C1AEE5500A557BB /* ScrabbleDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScrabbleDict.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,8 @@
 		154270061C1AED7A00A557BB = {
 			isa = PBXGroup;
 			children = (
+				1542704E1C1AEDE300A557BB /* LadderBasicViewController.h */,
+				1542704F1C1AEDE300A557BB /* LadderBasicViewController.m */,
 				154270111C1AED7A00A557BB /* wordLadderRD2 */,
 				1542702B1C1AED7B00A557BB /* wordLadderRD2Tests */,
 				154270361C1AED7B00A557BB /* wordLadderRD2UITests */,
@@ -101,11 +117,18 @@
 		154270111C1AED7A00A557BB /* wordLadderRD2 */ = {
 			isa = PBXGroup;
 			children = (
+				154270451C1AEDC400A557BB /* PathQueue.h */,
+				154270461C1AEDC400A557BB /* PathQueue.m */,
+				154270471C1AEDC400A557BB /* StrinGraph.h */,
+				154270481C1AEDC400A557BB /* StrinGraph.m */,
+				154270491C1AEDC400A557BB /* LadderBuilder.h */,
+				1542704A1C1AEDC400A557BB /* LadderBuilder.m */,
 				154270151C1AED7A00A557BB /* AppDelegate.h */,
 				154270161C1AED7A00A557BB /* AppDelegate.m */,
 				154270181C1AED7A00A557BB /* ViewController.h */,
 				154270191C1AED7A00A557BB /* ViewController.m */,
 				1542701B1C1AED7A00A557BB /* Main.storyboard */,
+				154270511C1AEE5500A557BB /* ScrabbleDict.txt */,
 				1542701E1C1AED7A00A557BB /* Assets.xcassets */,
 				154270201C1AED7A00A557BB /* LaunchScreen.storyboard */,
 				154270231C1AED7A00A557BB /* Info.plist */,
@@ -246,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154270521C1AEE5500A557BB /* ScrabbleDict.txt in Resources */,
 				154270221C1AED7A00A557BB /* LaunchScreen.storyboard in Resources */,
 				1542701F1C1AED7A00A557BB /* Assets.xcassets in Resources */,
 				1542701D1C1AED7A00A557BB /* Main.storyboard in Resources */,
@@ -273,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1542704B1C1AEDC400A557BB /* PathQueue.m in Sources */,
+				1542704D1C1AEDC400A557BB /* LadderBuilder.m in Sources */,
 				1542701A1C1AED7A00A557BB /* ViewController.m in Sources */,
 				154270171C1AED7A00A557BB /* AppDelegate.m in Sources */,
+				154270501C1AEDE300A557BB /* LadderBasicViewController.m in Sources */,
 				154270141C1AED7A00A557BB /* main.m in Sources */,
+				1542704C1C1AEDC400A557BB /* StrinGraph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

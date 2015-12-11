@@ -17,6 +17,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    /*
+    
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        NSDictionary *savedData = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        if ([savedData objectForKey:@"wordGraph"] != nil) {
+            self.games = [[NSMutableArray alloc] initWithArray:[savedData objectForKey:@"wordGraph"]];
+        }
+    }
+    
+    
+    - (void) saveDict: (NSMutableDictionary*) graphDict{
+        NSMutableDictionary *dataDict = [[NSMutableDictionary alloc] initWithCapacity:3];
+        if (games != nil) {
+            [dataDict setObject:games forKey:@"games"];  // save the games array
+        }
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+        NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+        
+        [NSKeyedArchiver archiveRootObject:dataDict toFile:filePath];
+    }
+    
+    */
     return YES;
 }
 
