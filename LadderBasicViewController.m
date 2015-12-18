@@ -58,9 +58,10 @@
 #pragma mark: actions
 
 - (IBAction)editingChanged:(UITextField*)sender {
-    NSLog(@"Editing changed");
     
+    NSLog(@"Graph checked with %@", sender.text);
     if ([self.lb.graph contains:sender.text]) {
+        NSLog(@"Editing changed");
         sender.textColor = [UIColor blueColor];
     }else{
         sender.textColor = [UIColor blackColor];

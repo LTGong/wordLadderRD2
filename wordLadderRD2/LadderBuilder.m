@@ -152,6 +152,7 @@
         while (! [q isEmpty]) {
             NSArray* currentPath = [q dequeue];
             
+            
             for (NSString* connectedWord in [self.graph getVerticesLinkedTo:[currentPath lastObject]]) {
                 if ([connectedWord isEqualToString:word2]) {
                     return [currentPath arrayByAddingObject:word2];
